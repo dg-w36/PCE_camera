@@ -15,18 +15,18 @@
 		218E93F61C9799ED005C4F35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 218E93F41C9799ED005C4F35 /* LaunchScreen.storyboard */; };
 		218E94011C9799ED005C4F35 /* PCEv1_0_4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218E94001C9799ED005C4F35 /* PCEv1_0_4Tests.swift */; };
 		218E940C1C9799ED005C4F35 /* PCEv1_0_4UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218E940B1C9799ED005C4F35 /* PCEv1_0_4UITests.swift */; };
-		218E941A1C979A04005C4F35 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 218E94191C979A04005C4F35 /* opencv2.framework */; };
 		218E941C1C979A2C005C4F35 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 218E941B1C979A2C005C4F35 /* AVFoundation.framework */; };
 		218E94201C979B3E005C4F35 /* opencv.mm in Sources */ = {isa = PBXBuildFile; fileRef = 218E941F1C979B3E005C4F35 /* opencv.mm */; };
 		218E94221C979C28005C4F35 /* cameraPeople.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218E94211C979C28005C4F35 /* cameraPeople.swift */; };
-		218E94391C97A2D4005C4F35 /* haarcascade_frontalface_alt2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 218E94311C97A2D4005C4F35 /* haarcascade_frontalface_alt2.xml */; };
-		218E943A1C97A2D4005C4F35 /* mid_KNN.xml in Resources */ = {isa = PBXBuildFile; fileRef = 218E94321C97A2D4005C4F35 /* mid_KNN.xml */; };
-		218E943B1C97A2D4005C4F35 /* mid_NBC.xml in Resources */ = {isa = PBXBuildFile; fileRef = 218E94331C97A2D4005C4F35 /* mid_NBC.xml */; };
-		218E943C1C97A2D4005C4F35 /* pca.xml in Resources */ = {isa = PBXBuildFile; fileRef = 218E94341C97A2D4005C4F35 /* pca.xml */; };
-		218E943D1C97A2D4005C4F35 /* third_KNN.xml in Resources */ = {isa = PBXBuildFile; fileRef = 218E94351C97A2D4005C4F35 /* third_KNN.xml */; };
-		218E943E1C97A2D4005C4F35 /* third_logistic.xml in Resources */ = {isa = PBXBuildFile; fileRef = 218E94361C97A2D4005C4F35 /* third_logistic.xml */; };
-		218E943F1C97A2D4005C4F35 /* third_NBC.xml in Resources */ = {isa = PBXBuildFile; fileRef = 218E94371C97A2D4005C4F35 /* third_NBC.xml */; };
-		218E94401C97A2D4005C4F35 /* third_svm.xml in Resources */ = {isa = PBXBuildFile; fileRef = 218E94381C97A2D4005C4F35 /* third_svm.xml */; };
+		21FDCDC11CB6AF4E00685495 /* haarcascade_frontalface_alt2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 21FDCDC01CB6AF4E00685495 /* haarcascade_frontalface_alt2.xml */; };
+		21FDCDC91CB6B03800685495 /* third_svm.xml in Resources */ = {isa = PBXBuildFile; fileRef = 21FDCDC21CB6B03800685495 /* third_svm.xml */; };
+		21FDCDCA1CB6B03800685495 /* mid_KNN.xml in Resources */ = {isa = PBXBuildFile; fileRef = 21FDCDC31CB6B03800685495 /* mid_KNN.xml */; };
+		21FDCDCB1CB6B03800685495 /* third_KNN.xml in Resources */ = {isa = PBXBuildFile; fileRef = 21FDCDC41CB6B03800685495 /* third_KNN.xml */; };
+		21FDCDCC1CB6B03800685495 /* third_logistic.xml in Resources */ = {isa = PBXBuildFile; fileRef = 21FDCDC51CB6B03800685495 /* third_logistic.xml */; };
+		21FDCDCD1CB6B03800685495 /* third_NBC.xml in Resources */ = {isa = PBXBuildFile; fileRef = 21FDCDC61CB6B03800685495 /* third_NBC.xml */; };
+		21FDCDCE1CB6B03800685495 /* mid_NBC.xml in Resources */ = {isa = PBXBuildFile; fileRef = 21FDCDC71CB6B03800685495 /* mid_NBC.xml */; };
+		21FDCDCF1CB6B03800685495 /* pca.xml in Resources */ = {isa = PBXBuildFile; fileRef = 21FDCDC81CB6B03800685495 /* pca.xml */; };
+		21FDCDD11CB6B0D400685495 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21FDCDD01CB6B0D400685495 /* opencv2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,20 +61,20 @@
 		218E94071C9799ED005C4F35 /* PCE相机.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PCE相机.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		218E940B1C9799ED005C4F35 /* PCEv1_0_4UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCEv1_0_4UITests.swift; sourceTree = "<group>"; };
 		218E940D1C9799ED005C4F35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		218E94191C979A04005C4F35 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		218E941B1C979A2C005C4F35 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		218E941D1C979B3E005C4F35 /* PCEv1.0.4-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PCEv1.0.4-Bridging-Header.h"; sourceTree = "<group>"; };
 		218E941E1C979B3E005C4F35 /* opencv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opencv.h; sourceTree = "<group>"; };
 		218E941F1C979B3E005C4F35 /* opencv.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = opencv.mm; sourceTree = "<group>"; };
 		218E94211C979C28005C4F35 /* cameraPeople.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cameraPeople.swift; sourceTree = "<group>"; };
-		218E94311C97A2D4005C4F35 /* haarcascade_frontalface_alt2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt2.xml; sourceTree = "<group>"; };
-		218E94321C97A2D4005C4F35 /* mid_KNN.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = mid_KNN.xml; sourceTree = "<group>"; };
-		218E94331C97A2D4005C4F35 /* mid_NBC.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = mid_NBC.xml; sourceTree = "<group>"; };
-		218E94341C97A2D4005C4F35 /* pca.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = pca.xml; sourceTree = "<group>"; };
-		218E94351C97A2D4005C4F35 /* third_KNN.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = third_KNN.xml; sourceTree = "<group>"; };
-		218E94361C97A2D4005C4F35 /* third_logistic.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = third_logistic.xml; sourceTree = "<group>"; };
-		218E94371C97A2D4005C4F35 /* third_NBC.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = third_NBC.xml; sourceTree = "<group>"; };
-		218E94381C97A2D4005C4F35 /* third_svm.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = third_svm.xml; sourceTree = "<group>"; };
+		21FDCDC01CB6AF4E00685495 /* haarcascade_frontalface_alt2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = haarcascade_frontalface_alt2.xml; path = PCEv1.0.4/haarcascade_frontalface_alt2.xml; sourceTree = "<group>"; };
+		21FDCDC21CB6B03800685495 /* third_svm.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = third_svm.xml; path = PCEv1.0.4/third_svm.xml; sourceTree = "<group>"; };
+		21FDCDC31CB6B03800685495 /* mid_KNN.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = mid_KNN.xml; path = PCEv1.0.4/mid_KNN.xml; sourceTree = "<group>"; };
+		21FDCDC41CB6B03800685495 /* third_KNN.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = third_KNN.xml; path = PCEv1.0.4/third_KNN.xml; sourceTree = "<group>"; };
+		21FDCDC51CB6B03800685495 /* third_logistic.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = third_logistic.xml; path = PCEv1.0.4/third_logistic.xml; sourceTree = "<group>"; };
+		21FDCDC61CB6B03800685495 /* third_NBC.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = third_NBC.xml; path = PCEv1.0.4/third_NBC.xml; sourceTree = "<group>"; };
+		21FDCDC71CB6B03800685495 /* mid_NBC.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = mid_NBC.xml; path = PCEv1.0.4/mid_NBC.xml; sourceTree = "<group>"; };
+		21FDCDC81CB6B03800685495 /* pca.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = pca.xml; path = PCEv1.0.4/pca.xml; sourceTree = "<group>"; };
+		21FDCDD01CB6B0D400685495 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = PCEv1.0.4/opencv2.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,8 +82,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21FDCDD11CB6B0D400685495 /* opencv2.framework in Frameworks */,
 				218E941C1C979A2C005C4F35 /* AVFoundation.framework in Frameworks */,
-				218E941A1C979A04005C4F35 /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,16 +107,16 @@
 		218E93DF1C9799ED005C4F35 = {
 			isa = PBXGroup;
 			children = (
-				218E94311C97A2D4005C4F35 /* haarcascade_frontalface_alt2.xml */,
-				218E94321C97A2D4005C4F35 /* mid_KNN.xml */,
-				218E94331C97A2D4005C4F35 /* mid_NBC.xml */,
-				218E94341C97A2D4005C4F35 /* pca.xml */,
-				218E94351C97A2D4005C4F35 /* third_KNN.xml */,
-				218E94361C97A2D4005C4F35 /* third_logistic.xml */,
-				218E94371C97A2D4005C4F35 /* third_NBC.xml */,
-				218E94381C97A2D4005C4F35 /* third_svm.xml */,
+				21FDCDD01CB6B0D400685495 /* opencv2.framework */,
+				21FDCDC21CB6B03800685495 /* third_svm.xml */,
+				21FDCDC31CB6B03800685495 /* mid_KNN.xml */,
+				21FDCDC41CB6B03800685495 /* third_KNN.xml */,
+				21FDCDC51CB6B03800685495 /* third_logistic.xml */,
+				21FDCDC61CB6B03800685495 /* third_NBC.xml */,
+				21FDCDC71CB6B03800685495 /* mid_NBC.xml */,
+				21FDCDC81CB6B03800685495 /* pca.xml */,
+				21FDCDC01CB6AF4E00685495 /* haarcascade_frontalface_alt2.xml */,
 				218E941B1C979A2C005C4F35 /* AVFoundation.framework */,
-				218E94191C979A04005C4F35 /* opencv2.framework */,
 				218E93EA1C9799ED005C4F35 /* PCEv1.0.4 */,
 				218E93FF1C9799ED005C4F35 /* PCEv1.0.4Tests */,
 				218E940A1C9799ED005C4F35 /* PCEv1.0.4UITests */,
@@ -278,16 +278,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				218E93F61C9799ED005C4F35 /* LaunchScreen.storyboard in Resources */,
+				21FDCDCC1CB6B03800685495 /* third_logistic.xml in Resources */,
+				21FDCDCB1CB6B03800685495 /* third_KNN.xml in Resources */,
 				218E93F31C9799ED005C4F35 /* Assets.xcassets in Resources */,
-				218E943C1C97A2D4005C4F35 /* pca.xml in Resources */,
-				218E943F1C97A2D4005C4F35 /* third_NBC.xml in Resources */,
-				218E943B1C97A2D4005C4F35 /* mid_NBC.xml in Resources */,
-				218E94391C97A2D4005C4F35 /* haarcascade_frontalface_alt2.xml in Resources */,
-				218E943D1C97A2D4005C4F35 /* third_KNN.xml in Resources */,
-				218E94401C97A2D4005C4F35 /* third_svm.xml in Resources */,
-				218E943A1C97A2D4005C4F35 /* mid_KNN.xml in Resources */,
-				218E943E1C97A2D4005C4F35 /* third_logistic.xml in Resources */,
+				21FDCDCA1CB6B03800685495 /* mid_KNN.xml in Resources */,
+				21FDCDC11CB6AF4E00685495 /* haarcascade_frontalface_alt2.xml in Resources */,
+				21FDCDCE1CB6B03800685495 /* mid_NBC.xml in Resources */,
+				21FDCDCD1CB6B03800685495 /* third_NBC.xml in Resources */,
+				21FDCDCF1CB6B03800685495 /* pca.xml in Resources */,
 				218E93F11C9799ED005C4F35 /* Main.storyboard in Resources */,
+				21FDCDC91CB6B03800685495 /* third_svm.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,6 +463,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/PCEv1.0.4",
 				);
 				INFOPLIST_FILE = PCEv1.0.4/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
@@ -486,6 +487,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/PCEv1.0.4",
 				);
 				INFOPLIST_FILE = PCEv1.0.4/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
