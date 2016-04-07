@@ -18,6 +18,7 @@
 		218E941C1C979A2C005C4F35 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 218E941B1C979A2C005C4F35 /* AVFoundation.framework */; };
 		218E94201C979B3E005C4F35 /* opencv.mm in Sources */ = {isa = PBXBuildFile; fileRef = 218E941F1C979B3E005C4F35 /* opencv.mm */; };
 		218E94221C979C28005C4F35 /* cameraPeople.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218E94211C979C28005C4F35 /* cameraPeople.swift */; };
+		21CB4B261CB6B62F0033BF69 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21CB4B251CB6B62F0033BF69 /* opencv2.framework */; };
 		21FDCDC11CB6AF4E00685495 /* haarcascade_frontalface_alt2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 21FDCDC01CB6AF4E00685495 /* haarcascade_frontalface_alt2.xml */; };
 		21FDCDC91CB6B03800685495 /* third_svm.xml in Resources */ = {isa = PBXBuildFile; fileRef = 21FDCDC21CB6B03800685495 /* third_svm.xml */; };
 		21FDCDCA1CB6B03800685495 /* mid_KNN.xml in Resources */ = {isa = PBXBuildFile; fileRef = 21FDCDC31CB6B03800685495 /* mid_KNN.xml */; };
@@ -26,7 +27,6 @@
 		21FDCDCD1CB6B03800685495 /* third_NBC.xml in Resources */ = {isa = PBXBuildFile; fileRef = 21FDCDC61CB6B03800685495 /* third_NBC.xml */; };
 		21FDCDCE1CB6B03800685495 /* mid_NBC.xml in Resources */ = {isa = PBXBuildFile; fileRef = 21FDCDC71CB6B03800685495 /* mid_NBC.xml */; };
 		21FDCDCF1CB6B03800685495 /* pca.xml in Resources */ = {isa = PBXBuildFile; fileRef = 21FDCDC81CB6B03800685495 /* pca.xml */; };
-		21FDCDD11CB6B0D400685495 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21FDCDD01CB6B0D400685495 /* opencv2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +66,7 @@
 		218E941E1C979B3E005C4F35 /* opencv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opencv.h; sourceTree = "<group>"; };
 		218E941F1C979B3E005C4F35 /* opencv.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = opencv.mm; sourceTree = "<group>"; };
 		218E94211C979C28005C4F35 /* cameraPeople.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cameraPeople.swift; sourceTree = "<group>"; };
+		21CB4B251CB6B62F0033BF69 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = PCEv1.0.4/opencv2.framework; sourceTree = "<group>"; };
 		21FDCDC01CB6AF4E00685495 /* haarcascade_frontalface_alt2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = haarcascade_frontalface_alt2.xml; path = PCEv1.0.4/haarcascade_frontalface_alt2.xml; sourceTree = "<group>"; };
 		21FDCDC21CB6B03800685495 /* third_svm.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = third_svm.xml; path = PCEv1.0.4/third_svm.xml; sourceTree = "<group>"; };
 		21FDCDC31CB6B03800685495 /* mid_KNN.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = mid_KNN.xml; path = PCEv1.0.4/mid_KNN.xml; sourceTree = "<group>"; };
@@ -74,7 +75,6 @@
 		21FDCDC61CB6B03800685495 /* third_NBC.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = third_NBC.xml; path = PCEv1.0.4/third_NBC.xml; sourceTree = "<group>"; };
 		21FDCDC71CB6B03800685495 /* mid_NBC.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = mid_NBC.xml; path = PCEv1.0.4/mid_NBC.xml; sourceTree = "<group>"; };
 		21FDCDC81CB6B03800685495 /* pca.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = pca.xml; path = PCEv1.0.4/pca.xml; sourceTree = "<group>"; };
-		21FDCDD01CB6B0D400685495 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = PCEv1.0.4/opencv2.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21FDCDD11CB6B0D400685495 /* opencv2.framework in Frameworks */,
+				21CB4B261CB6B62F0033BF69 /* opencv2.framework in Frameworks */,
 				218E941C1C979A2C005C4F35 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -107,7 +107,7 @@
 		218E93DF1C9799ED005C4F35 = {
 			isa = PBXGroup;
 			children = (
-				21FDCDD01CB6B0D400685495 /* opencv2.framework */,
+				21CB4B251CB6B62F0033BF69 /* opencv2.framework */,
 				21FDCDC21CB6B03800685495 /* third_svm.xml */,
 				21FDCDC31CB6B03800685495 /* mid_KNN.xml */,
 				21FDCDC41CB6B03800685495 /* third_KNN.xml */,
