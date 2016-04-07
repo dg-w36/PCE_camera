@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PCE相机" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KFL-SF-k0P"/>
+                        <viewControllerLayoutGuide type="bottom" id="bdH-W9-m1o"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5Po-Eb-JiI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hwJ-sW-5pY">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tmp1" translatesAutoresizingMaskIntoConstraints="NO" id="XD4-sd-Mzx">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="570"/>
+                                    </imageView>
+                                    <stackView opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RoJ-1S-3DU">
+                                        <rect key="frame" x="0.0" y="570" width="600" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7aG-ML-b0W">
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="30"/>
+                                                <state key="normal" title="照片墙"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uf7-fb-VH9">
+                                                <rect key="frame" x="200" y="0.0" width="200" height="30"/>
+                                                <state key="normal" title="拍照"/>
+                                                <connections>
+                                                    <segue destination="P1T-LC-0xx" kind="presentation" id="Zg5-QE-EVv"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PW0-kx-gYr">
+                                                <rect key="frame" x="400" y="0.0" width="200" height="30"/>
+                                                <state key="normal" title="设置"/>
+                                                <connections>
+                                                    <segue destination="Lfx-97-Ge2" kind="presentation" id="MrN-7A-ysZ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Uf7-fb-VH9" firstAttribute="width" secondItem="7aG-ML-b0W" secondAttribute="width" id="4oR-mG-JcD"/>
+                                            <constraint firstItem="PW0-kx-gYr" firstAttribute="width" secondItem="7aG-ML-b0W" secondAttribute="width" id="FN9-iG-qce"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.3020731921" green="0.92602589089999998" blue="0.96050182910000004" alpha="0.97473060339999995" colorSpace="calibratedRGB"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hwJ-sW-5pY" firstAttribute="leading" secondItem="5Po-Eb-JiI" secondAttribute="leading" id="1ah-Az-OGw"/>
+                            <constraint firstAttribute="bottom" secondItem="RoJ-1S-3DU" secondAttribute="bottom" id="4Cv-xq-uHh"/>
+                            <constraint firstItem="hwJ-sW-5pY" firstAttribute="top" secondItem="5Po-Eb-JiI" secondAttribute="top" id="VrW-Ld-QQB"/>
+                            <constraint firstAttribute="trailing" secondItem="hwJ-sW-5pY" secondAttribute="trailing" id="w0J-Ki-8zi"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="234" y="364"/>
+        </scene>
+        <!--renwu shitu -->
+        <scene sceneID="5gB-Tm-cdH">
+            <objects>
+                <viewController id="P1T-LC-0xx" userLabel="renwu shitu " customClass="cameraPeople" customModule="PCE相机" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pTy-l4-eNG"/>
+                        <viewControllerLayoutGuide type="bottom" id="Lni-cZ-QOl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Xqx-MX-tdz">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oGR-43-qwN">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0kk-OH-3c1">
+                                <rect key="frame" x="287" y="553" width="25" height="25"/>
+                                <state key="normal" image="pRB45"/>
+                                <connections>
+                                    <action selector="takePicture:" destination="P1T-LC-0xx" eventType="touchUpInside" id="5hJ-oE-iyt"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ezD-y9-a9D">
+                                <rect key="frame" x="0.0" y="1" width="600" height="57"/>
+                                <color key="backgroundColor" red="0.41363301701570676" green="0.41363301701570676" blue="0.41363301701570676" alpha="0.53354942375886527" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IRC-fC-PR4">
+                                <rect key="frame" x="8" y="550" width="30" height="30"/>
+                                <state key="normal" image="cc30"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="LkH-t4-pCf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0kk-OH-3c1" firstAttribute="centerX" secondItem="IRC-fC-PR4" secondAttribute="centerX" id="1ij-Rz-a8H"/>
+                            <constraint firstItem="IRC-fC-PR4" firstAttribute="leading" secondItem="Xqx-MX-tdz" secondAttribute="leading" constant="20" id="7zi-lq-p8v"/>
+                            <constraint firstItem="0kk-OH-3c1" firstAttribute="centerY" secondItem="Xqx-MX-tdz" secondAttribute="centerY" id="HPu-yU-ACB"/>
+                            <constraint firstItem="oGR-43-qwN" firstAttribute="top" secondItem="Xqx-MX-tdz" secondAttribute="top" id="Kdl-Pq-BDP"/>
+                            <constraint firstItem="0kk-OH-3c1" firstAttribute="centerX" secondItem="Xqx-MX-tdz" secondAttribute="centerX" id="MX9-Et-QPt"/>
+                            <constraint firstItem="oGR-43-qwN" firstAttribute="leading" secondItem="Xqx-MX-tdz" secondAttribute="leading" id="X1w-Bd-Eoe"/>
+                            <constraint firstAttribute="trailing" secondItem="oGR-43-qwN" secondAttribute="trailing" id="Yzf-yP-X9V"/>
+                            <constraint firstItem="0kk-OH-3c1" firstAttribute="centerY" secondItem="IRC-fC-PR4" secondAttribute="centerY" id="dwN-5H-iVc"/>
+                            <constraint firstAttribute="bottom" secondItem="oGR-43-qwN" secondAttribute="bottom" id="eSL-Yr-YMQ"/>
+                            <constraint firstItem="Lni-cZ-QOl" firstAttribute="top" secondItem="IRC-fC-PR4" secondAttribute="bottom" constant="20" id="tBL-YS-6xh"/>
+                            <constraint firstAttribute="trailing" secondItem="IRC-fC-PR4" secondAttribute="trailing" constant="20" id="uVC-JN-BOX"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="7zi-lq-p8v"/>
+                                <exclude reference="uVC-JN-BOX"/>
+                                <exclude reference="1ij-Rz-a8H"/>
+                                <exclude reference="HPu-yU-ACB"/>
+                                <exclude reference="MX9-Et-QPt"/>
+                                <exclude reference="dwN-5H-iVc"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="uVC-JN-BOX"/>
+                                <include reference="1ij-Rz-a8H"/>
+                                <include reference="HPu-yU-ACB"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="constraints">
+                                <include reference="7zi-lq-p8v"/>
+                                <include reference="MX9-Et-QPt"/>
+                                <include reference="dwN-5H-iVc"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="cameraBackButton" destination="IRC-fC-PR4" id="UKH-hI-c2z"/>
+                        <outlet property="cameraRecordsButton" destination="0kk-OH-3c1" id="mB2-gT-f2q"/>
+                        <outlet property="cameraScoreLabel" destination="ezD-y9-a9D" id="4VN-xA-vZP"/>
+                        <outlet property="cameraUIView" destination="oGR-43-qwN" id="05N-WL-fgF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a5o-w4-E0m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1267" y="364"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Je8-OJ-b1V">
+            <objects>
+                <viewController id="Lfx-97-Ge2" customClass="ViewController" customModule="PCE相机" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HVo-yD-vCx"/>
+                        <viewControllerLayoutGuide type="bottom" id="tF8-dV-S7n"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4sR-su-yrY">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Duv-uu-E7i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1357.5" y="1322.5352112676055"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cc30" width="30" height="30"/>
+        <image name="pRB45" width="45" height="45"/>
+        <image name="tmp1" width="746" height="1238"/>
+    </resources>
+</document>
