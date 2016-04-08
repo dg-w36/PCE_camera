@@ -19,6 +19,7 @@ class cameraPeople: UIViewController , AVCaptureVideoDataOutputSampleBufferDeleg
     @IBOutlet var cameraRecordsButton: UIButton!//拍照按钮
     var cameraCaptureSession:AVCaptureSession!//拍照序列
     var cv = opencv()//cv类
+    var filter:CIFilter!
     lazy var cameraCIContext: CIContext = {
         let eaglContext = EAGLContext(API: EAGLRenderingAPI.OpenGLES2)
         let options = [kCIContextWorkingColorSpace : NSNull()]
@@ -68,6 +69,8 @@ class cameraPeople: UIViewController , AVCaptureVideoDataOutputSampleBufferDeleg
         else{
             print("un")
         }
+        filter=CIFilter(name: "CIHueAdjust")
+        filter.setValue(Float(M_PI/2), forKey: kCIInputImageKey)
     }
     override func viewWillDisappear(animated: Bool) {
         if cmm.accelerometerActive{
@@ -139,6 +142,12 @@ class cameraPeople: UIViewController , AVCaptureVideoDataOutputSampleBufferDeleg
             t = CGAffineTransformMakeRotation(0)
         }
         outputImage = outputImage.imageByApplyingTransform(t);
+        
+        if filter != nil {
+            filter.setValue(outputImage, forKey: kCIInputImageKey)
+            outputImage = filter.outputImage!
+        }
+        
         let cgImage = self.cameraCIContext.createCGImage(outputImage, fromRect: outputImage.extent)
         var uiimage = UIImage(CGImage: cgImage)
         
