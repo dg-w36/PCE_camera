@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A4E2FBE1CB743DC002259E5 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A4E2FBD1CB743DC002259E5 /* opencv2.framework */; };
 		0A9B65B51CA4CDDF0050BC62 /* cameraPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B65B41CA4CDDF0050BC62 /* cameraPhoto.swift */; };
 		218E93EC1C9799ED005C4F35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218E93EB1C9799ED005C4F35 /* AppDelegate.swift */; };
 		218E93EE1C9799ED005C4F35 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218E93ED1C9799ED005C4F35 /* ViewController.swift */; };
@@ -18,7 +19,6 @@
 		218E941C1C979A2C005C4F35 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 218E941B1C979A2C005C4F35 /* AVFoundation.framework */; };
 		218E94201C979B3E005C4F35 /* opencv.mm in Sources */ = {isa = PBXBuildFile; fileRef = 218E941F1C979B3E005C4F35 /* opencv.mm */; };
 		218E94221C979C28005C4F35 /* cameraPeople.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218E94211C979C28005C4F35 /* cameraPeople.swift */; };
-		21CB4B261CB6B62F0033BF69 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21CB4B251CB6B62F0033BF69 /* opencv2.framework */; };
 		21FDCDC11CB6AF4E00685495 /* haarcascade_frontalface_alt2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 21FDCDC01CB6AF4E00685495 /* haarcascade_frontalface_alt2.xml */; };
 		21FDCDC91CB6B03800685495 /* third_svm.xml in Resources */ = {isa = PBXBuildFile; fileRef = 21FDCDC21CB6B03800685495 /* third_svm.xml */; };
 		21FDCDCA1CB6B03800685495 /* mid_KNN.xml in Resources */ = {isa = PBXBuildFile; fileRef = 21FDCDC31CB6B03800685495 /* mid_KNN.xml */; };
@@ -47,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A4E2FBD1CB743DC002259E5 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		0A9B65B41CA4CDDF0050BC62 /* cameraPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cameraPhoto.swift; sourceTree = "<group>"; };
 		218E93E81C9799ED005C4F35 /* PCE相机.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PCE相机.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		218E93EB1C9799ED005C4F35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -66,7 +67,6 @@
 		218E941E1C979B3E005C4F35 /* opencv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opencv.h; sourceTree = "<group>"; };
 		218E941F1C979B3E005C4F35 /* opencv.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = opencv.mm; sourceTree = "<group>"; };
 		218E94211C979C28005C4F35 /* cameraPeople.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cameraPeople.swift; sourceTree = "<group>"; };
-		21CB4B251CB6B62F0033BF69 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = PCEv1.0.4/opencv2.framework; sourceTree = "<group>"; };
 		21FDCDC01CB6AF4E00685495 /* haarcascade_frontalface_alt2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = haarcascade_frontalface_alt2.xml; path = PCEv1.0.4/haarcascade_frontalface_alt2.xml; sourceTree = "<group>"; };
 		21FDCDC21CB6B03800685495 /* third_svm.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = third_svm.xml; path = PCEv1.0.4/third_svm.xml; sourceTree = "<group>"; };
 		21FDCDC31CB6B03800685495 /* mid_KNN.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = mid_KNN.xml; path = PCEv1.0.4/mid_KNN.xml; sourceTree = "<group>"; };
@@ -82,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21CB4B261CB6B62F0033BF69 /* opencv2.framework in Frameworks */,
+				0A4E2FBE1CB743DC002259E5 /* opencv2.framework in Frameworks */,
 				218E941C1C979A2C005C4F35 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -107,7 +107,7 @@
 		218E93DF1C9799ED005C4F35 = {
 			isa = PBXGroup;
 			children = (
-				21CB4B251CB6B62F0033BF69 /* opencv2.framework */,
+				0A4E2FBD1CB743DC002259E5 /* opencv2.framework */,
 				21FDCDC21CB6B03800685495 /* third_svm.xml */,
 				21FDCDC31CB6B03800685495 /* mid_KNN.xml */,
 				21FDCDC41CB6B03800685495 /* third_KNN.xml */,
