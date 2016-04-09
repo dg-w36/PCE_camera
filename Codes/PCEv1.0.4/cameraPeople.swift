@@ -69,8 +69,7 @@ class cameraPeople: UIViewController , AVCaptureVideoDataOutputSampleBufferDeleg
         else{
             print("un")
         }
-        filter=CIFilter(name: "CIHueAdjust")
-        filter.setValue(Float(M_PI/2), forKey: kCIInputImageKey)
+        filter=CIFilter(name: "CIPhotoEffectTransfer")
     }
     override func viewWillDisappear(animated: Bool) {
         if cmm.accelerometerActive{
