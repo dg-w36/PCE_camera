@@ -15,15 +15,20 @@ var Score = 0.0
 class cameraPeople: UIViewController , AVCaptureVideoDataOutputSampleBufferDelegate{
     @IBOutlet weak var cameraScoreLabel: UILabel!//打分类 显示分数
     @IBOutlet weak var cameraUIView: UIImageView!//显示图片
+    @IBOutlet var filterButtonContainer: UIView!// 滤镜容器
     @IBOutlet var cameraBackButton: UIButton!//返回按钮
     @IBOutlet var cameraRecordsButton: UIButton!//拍照按钮
     var cameraCaptureSession:AVCaptureSession!//拍照序列
     var cv = opencv()//cv类
+    var filter:CIFilter!
     lazy var cameraCIContext: CIContext = {
         let eaglContext = EAGLContext(API: EAGLRenderingAPI.OpenGLES2)
         let options = [kCIContextWorkingColorSpace : NSNull()]
         return CIContext(EAGLContext: eaglContext, options: options)
     }()//拍照用的
+    lazy var filterNames: [String] = {
+        return ["CIColorInvert","CIPhotoEffectMono","CIPhotoEffectInstant","CIPhotoEffectTransfer"]
+    }()//滤镜库
     var cameraCIImage:CIImage!//拍照用的
     var counter = 0;
     var timer:NSTimer!
@@ -48,6 +53,7 @@ class cameraPeople: UIViewController , AVCaptureVideoDataOutputSampleBufferDeleg
         //计时器，需要再看
         cmm = CMMotionManager()
         CPhoto=cameraPhoto()
+        filterButtonContainer.hidden = true
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -68,6 +74,7 @@ class cameraPeople: UIViewController , AVCaptureVideoDataOutputSampleBufferDeleg
         else{
             print("un")
         }
+        filter=CIFilter(name: "CIPhotoEffectTransfer")
     }
     override func viewWillDisappear(animated: Bool) {
         if cmm.accelerometerActive{
@@ -83,6 +90,15 @@ class cameraPeople: UIViewController , AVCaptureVideoDataOutputSampleBufferDeleg
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+//    @IBAction func switchFilters(sender: AnyObject) {
+//    }
+    @IBAction func openFilters(sender: AnyObject) {
+        filterButtonContainer.hidden=false
+    }
+    @IBAction func applyFilter(sender: UIButton) {//使用滤镜
+        var filterName = filterNames[sender.tag]
+        filter = CIFilter(name: filterName)
     }
     func updateCounter(){//更新计时器
         counter += 1
@@ -139,6 +155,12 @@ class cameraPeople: UIViewController , AVCaptureVideoDataOutputSampleBufferDeleg
             t = CGAffineTransformMakeRotation(0)
         }
         outputImage = outputImage.imageByApplyingTransform(t);
+        
+        if filter != nil {
+            filter.setValue(outputImage, forKey: kCIInputImageKey)
+            outputImage = filter.outputImage!
+        }
+        
         let cgImage = self.cameraCIContext.createCGImage(outputImage, fromRect: outputImage.extent)
         var uiimage = UIImage(CGImage: cgImage)
         
