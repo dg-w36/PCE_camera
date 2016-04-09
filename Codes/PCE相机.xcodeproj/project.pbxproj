@@ -11,7 +11,7 @@
 		0A9B65B51CA4CDDF0050BC62 /* cameraPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B65B41CA4CDDF0050BC62 /* cameraPhoto.swift */; };
 		218E93EC1C9799ED005C4F35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218E93EB1C9799ED005C4F35 /* AppDelegate.swift */; };
 		218E93EE1C9799ED005C4F35 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218E93ED1C9799ED005C4F35 /* ViewController.swift */; };
-		218E93F11C9799ED005C4F35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 218E93EF1C9799ED005C4F35 /* Main.storyboard */; };
+		218E93F11C9799ED005C4F35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 218E93EF1C9799ED005C4F35 /* Main.storyboard */; settings = {ASSET_TAGS = (0, ); }; };
 		218E93F31C9799ED005C4F35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 218E93F21C9799ED005C4F35 /* Assets.xcassets */; };
 		218E93F61C9799ED005C4F35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 218E93F41C9799ED005C4F35 /* LaunchScreen.storyboard */; };
 		218E94011C9799ED005C4F35 /* PCEv1_0_4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218E94001C9799ED005C4F35 /* PCEv1_0_4Tests.swift */; };
@@ -232,6 +232,11 @@
 		218E93E01C9799ED005C4F35 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					0,
+					1,
+					2,
+				);
 				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "王浩强";
