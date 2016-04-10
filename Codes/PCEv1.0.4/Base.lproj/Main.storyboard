@@ -103,6 +103,53 @@
                                     <segue destination="BYZ-38-t0r" kind="presentation" id="LkH-t4-pCf"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KVp-AR-1ic">
+                                <rect key="frame" x="179" y="236" width="240" height="128"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yIw-hv-5v0">
+                                        <rect key="frame" x="20" y="9" width="184" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Vv-v3-m1r">
+                                                <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="applyFilter:" destination="P1T-LC-0xx" eventType="touchUpInside" id="pDo-N1-GkT"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oKF-Nm-TaG">
+                                                <rect key="frame" x="46" y="0.0" width="46" height="30"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="applyFilter:" destination="P1T-LC-0xx" eventType="touchUpInside" id="55e-01-LLX"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0pk-eT-jGp">
+                                                <rect key="frame" x="92" y="0.0" width="46" height="30"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="applyFilter:" destination="P1T-LC-0xx" eventType="touchUpInside" id="og8-Hy-45y"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hpK-WU-vps">
+                                                <rect key="frame" x="138" y="0.0" width="46" height="30"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="applyFilter:" destination="P1T-LC-0xx" eventType="touchUpInside" id="YHe-6q-Dwi"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Rh-as-n9v" userLabel="filterButton">
+                                <rect key="frame" x="285" y="285" width="30" height="30"/>
+                                <state key="normal" title="滤镜"/>
+                                <connections>
+                                    <action selector="openFilters:" destination="P1T-LC-0xx" eventType="touchUpInside" id="lMM-cg-Ilg"/>
+                                    <action selector="switchFilters:" destination="P1T-LC-0xx" eventType="valueChanged" id="oap-Am-cNM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -116,7 +163,9 @@
                             <constraint firstItem="0kk-OH-3c1" firstAttribute="centerY" secondItem="IRC-fC-PR4" secondAttribute="centerY" id="dwN-5H-iVc"/>
                             <constraint firstAttribute="bottom" secondItem="oGR-43-qwN" secondAttribute="bottom" id="eSL-Yr-YMQ"/>
                             <constraint firstItem="Lni-cZ-QOl" firstAttribute="top" secondItem="IRC-fC-PR4" secondAttribute="bottom" constant="20" id="tBL-YS-6xh"/>
+                            <constraint firstAttribute="trailing" secondItem="4Rh-as-n9v" secondAttribute="trailing" constant="20" id="tjQ-LJ-60V"/>
                             <constraint firstAttribute="trailing" secondItem="IRC-fC-PR4" secondAttribute="trailing" constant="20" id="uVC-JN-BOX"/>
+                            <constraint firstItem="4Rh-as-n9v" firstAttribute="top" secondItem="Xqx-MX-tdz" secondAttribute="top" constant="15" id="ySC-Ey-dgj"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -148,6 +197,7 @@
                         <outlet property="cameraRecordsButton" destination="0kk-OH-3c1" id="mB2-gT-f2q"/>
                         <outlet property="cameraScoreLabel" destination="ezD-y9-a9D" id="4VN-xA-vZP"/>
                         <outlet property="cameraUIView" destination="oGR-43-qwN" id="05N-WL-fgF"/>
+                        <outlet property="filterButtonContainer" destination="KVp-AR-1ic" id="nRC-gG-V39"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a5o-w4-E0m" userLabel="First Responder" sceneMemberID="firstResponder"/>
