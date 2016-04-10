@@ -96,6 +96,9 @@ class cameraPeople: UIViewController , AVCaptureVideoDataOutputSampleBufferDeleg
     @IBAction func openFilters(sender: AnyObject) {
         filterButtonContainer.hidden=false
     }
+    @IBAction func closeFilters(sender: AnyObject) {
+        filterButtonContainer.hidden=true
+    }
     @IBAction func applyFilter(sender: UIButton) {//使用滤镜
         var filterName = filterNames[sender.tag]
         filter = CIFilter(name: filterName)
