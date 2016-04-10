@@ -11,9 +11,9 @@
 手机摄影爱好者的选择，让我们共建一个优秀的摄影App
 
 ####示例:  
-![](https://github.com/dgw36/PCE_camera/raw/jifan/documents/项目图片1.jpg)
-![](https://github.com/dgw36/PCE_camera/raw/jifan/documents/项目图片2.jpg)
-![](https://github.com/dgw36/PCE_camera/raw/jifan/documents/项目图片3.jpg)
+![](https://github.com/dg-w36/PCE_camera/raw/jifan/Document/项目图片1.jpg)
+![](https://github.com/dg-w36/PCE_camera/raw/jifan/Document/项目图片2.jpg)
+![](https://github.com/dg-w36/PCE_camera/raw/jifan/Document/项目图片3.jpg)
 
 ###特性
 - 对于美学的构图评分
