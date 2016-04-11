@@ -243,7 +243,7 @@
 				TargetAttributes = {
 					218E93E71C9799ED005C4F35 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = 7AVDNX29VL;
+						DevelopmentTeam = D5HF3C53NT;
 					};
 					218E93FB1C9799ED005C4F35 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -473,7 +473,7 @@
 				INFOPLIST_FILE = PCEv1.0.4/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "pce-org.PCEv1-0-6";
+				PRODUCT_BUNDLE_IDENTIFIER = "pce-org.PCEv2-0-1";
 				PRODUCT_NAME = "PCE相机";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "PCEv1.0.4/PCEv1.0.4-Bridging-Header.h";
@@ -497,7 +497,7 @@
 				INFOPLIST_FILE = PCEv1.0.4/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "pce-org.PCEv1-0-6";
+				PRODUCT_BUNDLE_IDENTIFIER = "pce-org.PCEv2-0-1";
 				PRODUCT_NAME = "PCE相机";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "PCEv1.0.4/PCEv1.0.4-Bridging-Header.h";
