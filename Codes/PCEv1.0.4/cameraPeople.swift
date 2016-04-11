@@ -33,7 +33,7 @@ class cameraPeople: UIViewController , AVCaptureVideoDataOutputSampleBufferDeleg
     var filter:CIFilter!
     var filterIsOpen=false//判断是否点开滤镜
     lazy var filterNames: [String] = {
-        return ["CIColorInvert","CIPhotoEffectMono","CIPhotoEffectInstant","CIPhotoEffectTransfer"]
+        return ["CISunbeamsGenerator","CIPhotoEffectMono","CIPhotoEffectInstant","CIPhotoEffectTransfer"]
     }()//滤镜库
     
     //时间相关

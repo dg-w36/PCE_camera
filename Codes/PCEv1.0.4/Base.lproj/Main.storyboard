@@ -104,7 +104,7 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Vv-v3-m1r">
                                                 <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
-                                                <state key="normal" title="反色"/>
+                                                <state key="normal" title="阳光"/>
                                                 <connections>
                                                     <action selector="applyFilter:" destination="P1T-LC-0xx" eventType="touchUpInside" id="pDo-N1-GkT"/>
                                                 </connections>
