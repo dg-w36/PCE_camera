@@ -27,7 +27,7 @@ class cameraPeople: UIViewController , AVCaptureVideoDataOutputSampleBufferDeleg
         return CIContext(EAGLContext: eaglContext, options: options)
     }()//拍照用的
     lazy var filterNames: [String] = {
-        return ["CIColorInvert","CIPhotoEffectMono","CIPhotoEffectInstant","CIPhotoEffectTransfer"]
+        return ["CISunbeamsGenerator","CIPhotoEffectMono","CIPhotoEffectInstant","CIPhotoEffectTransfer"]
     }()//滤镜库
     var cameraCIImage:CIImage!//拍照用的
     var counter = 0;
