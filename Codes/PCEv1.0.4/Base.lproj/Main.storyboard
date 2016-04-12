@@ -107,37 +107,32 @@
                                 <rect key="frame" x="0.0" y="236" width="600" height="40"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yIw-hv-5v0">
-                                        <rect key="frame" x="199" y="9" width="184" height="30"/>
+                                        <rect key="frame" x="199" y="9" width="120" height="30"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Vv-v3-m1r">
-<<<<<<< HEAD
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Vv-v3-m1r">
                                                 <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
-                                                <state key="normal" title="阳光"/>
-=======
-                                                <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
-                                                <state key="normal" title="Button"/>
->>>>>>> origin/K's-work
+                                                <state key="normal" title="反色"/>
                                                 <connections>
                                                     <action selector="applyFilter:" destination="P1T-LC-0xx" eventType="touchUpInside" id="pDo-N1-GkT"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oKF-Nm-TaG">
-                                                <rect key="frame" x="46" y="0.0" width="46" height="30"/>
-                                                <state key="normal" title="Button"/>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oKF-Nm-TaG">
+                                                <rect key="frame" x="30" y="0.0" width="30" height="30"/>
+                                                <state key="normal" title="单色"/>
                                                 <connections>
                                                     <action selector="applyFilter:" destination="P1T-LC-0xx" eventType="touchUpInside" id="55e-01-LLX"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="2" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0pk-eT-jGp">
-                                                <rect key="frame" x="92" y="0.0" width="46" height="30"/>
-                                                <state key="normal" title="Button"/>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0pk-eT-jGp">
+                                                <rect key="frame" x="60" y="0.0" width="30" height="30"/>
+                                                <state key="normal" title="怀旧"/>
                                                 <connections>
                                                     <action selector="applyFilter:" destination="P1T-LC-0xx" eventType="touchUpInside" id="og8-Hy-45y"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="3" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hpK-WU-vps">
-                                                <rect key="frame" x="138" y="0.0" width="46" height="30"/>
-                                                <state key="normal" title="Button"/>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hpK-WU-vps">
+                                                <rect key="frame" x="90" y="0.0" width="30" height="30"/>
+                                                <state key="normal" title="岁月"/>
                                                 <connections>
                                                     <action selector="applyFilter:" destination="P1T-LC-0xx" eventType="touchUpInside" id="YHe-6q-Dwi"/>
                                                 </connections>
@@ -174,7 +169,7 @@
                             <constraint firstAttribute="trailing" secondItem="KVp-AR-1ic" secondAttribute="trailing" id="2sh-8T-b4j"/>
                             <constraint firstItem="IRC-fC-PR4" firstAttribute="leading" secondItem="Xqx-MX-tdz" secondAttribute="leading" constant="20" id="7zi-lq-p8v"/>
                             <constraint firstItem="0kk-OH-3c1" firstAttribute="centerY" secondItem="Xqx-MX-tdz" secondAttribute="centerY" id="HPu-yU-ACB"/>
-                            <constraint firstItem="KVp-AR-1ic" firstAttribute="top" secondItem="Xqx-MX-tdz" secondAttribute="top" constant="58" id="Jvt-E5-bbA"/>
+                            <constraint firstItem="KVp-AR-1ic" firstAttribute="top" secondItem="Xqx-MX-tdz" secondAttribute="top" constant="57" id="Jvt-E5-bbA"/>
                             <constraint firstItem="oGR-43-qwN" firstAttribute="top" secondItem="Xqx-MX-tdz" secondAttribute="top" id="Kdl-Pq-BDP"/>
                             <constraint firstItem="0kk-OH-3c1" firstAttribute="centerX" secondItem="Xqx-MX-tdz" secondAttribute="centerX" id="MX9-Et-QPt"/>
                             <constraint firstItem="KVp-AR-1ic" firstAttribute="leading" secondItem="Xqx-MX-tdz" secondAttribute="leading" id="PuT-cv-WqJ"/>

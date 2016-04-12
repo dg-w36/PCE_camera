@@ -19,6 +19,7 @@ class cameraPeople: UIViewController , AVCaptureVideoDataOutputSampleBufferDeleg
     @IBOutlet var cameraBackButton: UIButton!//返回按钮
     @IBOutlet var cameraRecordsButton: UIButton!//拍照按钮
     var cameraCaptureSession:AVCaptureSession!//拍照序列
+    var isFilterOpen = false;
     var cv = opencv()//cv类
     var filter:CIFilter!
     lazy var cameraCIContext: CIContext = {
@@ -27,7 +28,7 @@ class cameraPeople: UIViewController , AVCaptureVideoDataOutputSampleBufferDeleg
         return CIContext(EAGLContext: eaglContext, options: options)
     }()//拍照用的
     lazy var filterNames: [String] = {
-        return ["CISunbeamsGenerator","CIPhotoEffectMono","CIPhotoEffectInstant","CIPhotoEffectTransfer"]
+        return ["CIColorInvert","CIPhotoEffectMono","CIPhotoEffectInstant","CIPhotoEffectTransfer"]
     }()//滤镜库
     var cameraCIImage:CIImage!//拍照用的
     var counter = 0;
@@ -83,9 +84,15 @@ class cameraPeople: UIViewController , AVCaptureVideoDataOutputSampleBufferDeleg
     }
 
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        let point = touches.first?.locationInView(self.view)
-        print(point)
-        self.cv.change_selection(point!)
+        if(isFilterOpen){
+            filterButtonContainer.hidden=true;
+            isFilterOpen=false;
+        }
+        else{
+            let point = touches.first?.locationInView(self.view)
+            print(point)
+            self.cv.change_selection(point!)
+        }
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -95,9 +102,7 @@ class cameraPeople: UIViewController , AVCaptureVideoDataOutputSampleBufferDeleg
 //    }
     @IBAction func openFilters(sender: AnyObject) {
         filterButtonContainer.hidden=false
-    }
-    @IBAction func closeFilters(sender: AnyObject) {
-        filterButtonContainer.hidden=true
+        isFilterOpen=true;
     }
     @IBAction func applyFilter(sender: UIButton) {//使用滤镜
         var filterName = filterNames[sender.tag]

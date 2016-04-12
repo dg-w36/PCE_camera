@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		0A4E2FBE1CB743DC002259E5 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A4E2FBD1CB743DC002259E5 /* opencv2.framework */; };
 		0A9B65B51CA4CDDF0050BC62 /* cameraPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B65B41CA4CDDF0050BC62 /* cameraPhoto.swift */; };
+		0AB66D6B1CBC0641006AC973 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AB66D671CBC0641006AC973 /* LaunchScreen.storyboard */; };
+		0AB66D6C1CBC0641006AC973 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AB66D691CBC0641006AC973 /* Main.storyboard */; };
 		218E93EC1C9799ED005C4F35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218E93EB1C9799ED005C4F35 /* AppDelegate.swift */; };
 		218E93EE1C9799ED005C4F35 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218E93ED1C9799ED005C4F35 /* ViewController.swift */; };
-		218E93F11C9799ED005C4F35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 218E93EF1C9799ED005C4F35 /* Main.storyboard */; settings = {ASSET_TAGS = (0, ); }; };
 		218E93F31C9799ED005C4F35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 218E93F21C9799ED005C4F35 /* Assets.xcassets */; };
-		218E93F61C9799ED005C4F35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 218E93F41C9799ED005C4F35 /* LaunchScreen.storyboard */; };
 		218E94011C9799ED005C4F35 /* PCEv1_0_4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218E94001C9799ED005C4F35 /* PCEv1_0_4Tests.swift */; };
 		218E940C1C9799ED005C4F35 /* PCEv1_0_4UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218E940B1C9799ED005C4F35 /* PCEv1_0_4UITests.swift */; };
 		218E941C1C979A2C005C4F35 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 218E941B1C979A2C005C4F35 /* AVFoundation.framework */; };
@@ -49,12 +49,12 @@
 /* Begin PBXFileReference section */
 		0A4E2FBD1CB743DC002259E5 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		0A9B65B41CA4CDDF0050BC62 /* cameraPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cameraPhoto.swift; sourceTree = "<group>"; };
+		0AB66D681CBC0641006AC973 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = PCEv1.0.4/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0AB66D6A1CBC0641006AC973 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = PCEv1.0.4/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		218E93E81C9799ED005C4F35 /* PCE相机.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PCE相机.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		218E93EB1C9799ED005C4F35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		218E93ED1C9799ED005C4F35 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		218E93F01C9799ED005C4F35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		218E93F21C9799ED005C4F35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		218E93F51C9799ED005C4F35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		218E93F71C9799ED005C4F35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		218E93FC1C9799ED005C4F35 /* PCE相机.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PCE相机.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		218E94001C9799ED005C4F35 /* PCEv1_0_4Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCEv1_0_4Tests.swift; sourceTree = "<group>"; };
@@ -107,6 +107,8 @@
 		218E93DF1C9799ED005C4F35 = {
 			isa = PBXGroup;
 			children = (
+				0AB66D671CBC0641006AC973 /* LaunchScreen.storyboard */,
+				0AB66D691CBC0641006AC973 /* Main.storyboard */,
 				0A4E2FBD1CB743DC002259E5 /* opencv2.framework */,
 				21FDCDC21CB6B03800685495 /* third_svm.xml */,
 				21FDCDC31CB6B03800685495 /* mid_KNN.xml */,
@@ -139,11 +141,9 @@
 			children = (
 				218E93EB1C9799ED005C4F35 /* AppDelegate.swift */,
 				218E93ED1C9799ED005C4F35 /* ViewController.swift */,
-				218E93EF1C9799ED005C4F35 /* Main.storyboard */,
 				218E941E1C979B3E005C4F35 /* opencv.h */,
 				218E941F1C979B3E005C4F35 /* opencv.mm */,
 				218E93F21C9799ED005C4F35 /* Assets.xcassets */,
-				218E93F41C9799ED005C4F35 /* LaunchScreen.storyboard */,
 				218E93F71C9799ED005C4F35 /* Info.plist */,
 				218E941D1C979B3E005C4F35 /* PCEv1.0.4-Bridging-Header.h */,
 				218E94211C979C28005C4F35 /* cameraPeople.swift */,
@@ -243,7 +243,7 @@
 				TargetAttributes = {
 					218E93E71C9799ED005C4F35 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = D5HF3C53NT;
+						DevelopmentTeam = 7AVDNX29VL;
 					};
 					218E93FB1C9799ED005C4F35 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -282,16 +282,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				218E93F61C9799ED005C4F35 /* LaunchScreen.storyboard in Resources */,
 				21FDCDCC1CB6B03800685495 /* third_logistic.xml in Resources */,
 				21FDCDCB1CB6B03800685495 /* third_KNN.xml in Resources */,
 				218E93F31C9799ED005C4F35 /* Assets.xcassets in Resources */,
+				0AB66D6B1CBC0641006AC973 /* LaunchScreen.storyboard in Resources */,
 				21FDCDCA1CB6B03800685495 /* mid_KNN.xml in Resources */,
+				0AB66D6C1CBC0641006AC973 /* Main.storyboard in Resources */,
 				21FDCDC11CB6AF4E00685495 /* haarcascade_frontalface_alt2.xml in Resources */,
 				21FDCDCE1CB6B03800685495 /* mid_NBC.xml in Resources */,
 				21FDCDCD1CB6B03800685495 /* third_NBC.xml in Resources */,
 				21FDCDCF1CB6B03800685495 /* pca.xml in Resources */,
-				218E93F11C9799ED005C4F35 /* Main.storyboard in Resources */,
 				21FDCDC91CB6B03800685495 /* third_svm.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,20 +357,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		218E93EF1C9799ED005C4F35 /* Main.storyboard */ = {
+		0AB66D671CBC0641006AC973 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				218E93F01C9799ED005C4F35 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		218E93F41C9799ED005C4F35 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				218E93F51C9799ED005C4F35 /* Base */,
+				0AB66D681CBC0641006AC973 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		0AB66D691CBC0641006AC973 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0AB66D6A1CBC0641006AC973 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -473,7 +473,7 @@
 				INFOPLIST_FILE = PCEv1.0.4/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "pce-org.PCEv2-0-1";
+				PRODUCT_BUNDLE_IDENTIFIER = "pce-org.PCEv2-0-2";
 				PRODUCT_NAME = "PCE相机";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "PCEv1.0.4/PCEv1.0.4-Bridging-Header.h";
@@ -497,7 +497,7 @@
 				INFOPLIST_FILE = PCEv1.0.4/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "pce-org.PCEv2-0-1";
+				PRODUCT_BUNDLE_IDENTIFIER = "pce-org.PCEv2-0-2";
 				PRODUCT_NAME = "PCE相机";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "PCEv1.0.4/PCEv1.0.4-Bridging-Header.h";
