@@ -109,28 +109,28 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yIw-hv-5v0">
                                         <rect key="frame" x="199" y="9" width="120" height="30"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Vv-v3-m1r">
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Vv-v3-m1r">
                                                 <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                                 <state key="normal" title="反色"/>
                                                 <connections>
                                                     <action selector="applyFilter:" destination="P1T-LC-0xx" eventType="touchUpInside" id="pDo-N1-GkT"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oKF-Nm-TaG">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oKF-Nm-TaG">
                                                 <rect key="frame" x="30" y="0.0" width="30" height="30"/>
                                                 <state key="normal" title="单色"/>
                                                 <connections>
                                                     <action selector="applyFilter:" destination="P1T-LC-0xx" eventType="touchUpInside" id="55e-01-LLX"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="2" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0pk-eT-jGp">
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0pk-eT-jGp">
                                                 <rect key="frame" x="60" y="0.0" width="30" height="30"/>
                                                 <state key="normal" title="怀旧"/>
                                                 <connections>
                                                     <action selector="applyFilter:" destination="P1T-LC-0xx" eventType="touchUpInside" id="og8-Hy-45y"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="3" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hpK-WU-vps">
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hpK-WU-vps">
                                                 <rect key="frame" x="90" y="0.0" width="30" height="30"/>
                                                 <state key="normal" title="岁月"/>
                                                 <connections>
