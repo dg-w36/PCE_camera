@@ -90,7 +90,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ezD-y9-a9D">
-                                <rect key="frame" x="0.0" y="1" width="600" height="57"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="57"/>
                                 <color key="backgroundColor" red="0.41363301701570676" green="0.41363301701570676" blue="0.41363301701570676" alpha="0.53354942375886527" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -103,49 +103,61 @@
                                     <segue destination="BYZ-38-t0r" kind="presentation" id="LkH-t4-pCf"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KVp-AR-1ic">
-                                <rect key="frame" x="179" y="236" width="240" height="128"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KVp-AR-1ic">
+                                <rect key="frame" x="0.0" y="236" width="600" height="40"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yIw-hv-5v0">
-                                        <rect key="frame" x="20" y="9" width="184" height="30"/>
+                                        <rect key="frame" x="199" y="9" width="120" height="30"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Vv-v3-m1r">
-                                                <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
-                                                <state key="normal" title="Button"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                <state key="normal" title="反色"/>
                                                 <connections>
                                                     <action selector="applyFilter:" destination="P1T-LC-0xx" eventType="touchUpInside" id="pDo-N1-GkT"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oKF-Nm-TaG">
-                                                <rect key="frame" x="46" y="0.0" width="46" height="30"/>
-                                                <state key="normal" title="Button"/>
+                                                <rect key="frame" x="30" y="0.0" width="30" height="30"/>
+                                                <state key="normal" title="单色"/>
                                                 <connections>
                                                     <action selector="applyFilter:" destination="P1T-LC-0xx" eventType="touchUpInside" id="55e-01-LLX"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0pk-eT-jGp">
-                                                <rect key="frame" x="92" y="0.0" width="46" height="30"/>
-                                                <state key="normal" title="Button"/>
+                                                <rect key="frame" x="60" y="0.0" width="30" height="30"/>
+                                                <state key="normal" title="怀旧"/>
                                                 <connections>
                                                     <action selector="applyFilter:" destination="P1T-LC-0xx" eventType="touchUpInside" id="og8-Hy-45y"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hpK-WU-vps">
-                                                <rect key="frame" x="138" y="0.0" width="46" height="30"/>
-                                                <state key="normal" title="Button"/>
+                                                <rect key="frame" x="90" y="0.0" width="30" height="30"/>
+                                                <state key="normal" title="岁月"/>
                                                 <connections>
                                                     <action selector="applyFilter:" destination="P1T-LC-0xx" eventType="touchUpInside" id="YHe-6q-Dwi"/>
                                                 </connections>
                                             </button>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="hpK-WU-vps" firstAttribute="width" secondItem="8Vv-v3-m1r" secondAttribute="width" id="NNb-X3-xI4"/>
+                                            <constraint firstItem="0pk-eT-jGp" firstAttribute="width" secondItem="8Vv-v3-m1r" secondAttribute="width" id="Qnf-7f-hZC"/>
+                                            <constraint firstItem="oKF-Nm-TaG" firstAttribute="width" secondItem="8Vv-v3-m1r" secondAttribute="width" id="zHQ-0i-AkI"/>
+                                        </constraints>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.41363301699999999" green="0.41363301699999999" blue="0.41363301699999999" alpha="0.53354942380000003" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="0pk-eT-jGp" firstAttribute="centerY" secondItem="KVp-AR-1ic" secondAttribute="centerY" id="Dhn-9Q-iD3"/>
+                                    <constraint firstItem="8Vv-v3-m1r" firstAttribute="centerY" secondItem="KVp-AR-1ic" secondAttribute="centerY" id="JQF-ce-BAh"/>
+                                    <constraint firstItem="hpK-WU-vps" firstAttribute="centerY" secondItem="KVp-AR-1ic" secondAttribute="centerY" id="Pqv-Dn-Idz"/>
+                                    <constraint firstItem="oKF-Nm-TaG" firstAttribute="centerY" secondItem="KVp-AR-1ic" secondAttribute="centerY" id="ajk-c3-Ete"/>
+                                </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Rh-as-n9v" userLabel="filterButton">
-                                <rect key="frame" x="285" y="285" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Rh-as-n9v" userLabel="filterButton">
+                                <rect key="frame" x="550" y="15" width="30" height="30"/>
                                 <state key="normal" title="滤镜"/>
                                 <connections>
+                                    <action selector="closeFilters:" destination="P1T-LC-0xx" eventType="touchUpOutside" id="UtE-q7-lZq"/>
                                     <action selector="openFilters:" destination="P1T-LC-0xx" eventType="touchUpInside" id="lMM-cg-Ilg"/>
                                     <action selector="switchFilters:" destination="P1T-LC-0xx" eventType="valueChanged" id="oap-Am-cNM"/>
                                 </connections>
@@ -154,10 +166,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="0kk-OH-3c1" firstAttribute="centerX" secondItem="IRC-fC-PR4" secondAttribute="centerX" id="1ij-Rz-a8H"/>
+                            <constraint firstAttribute="trailing" secondItem="KVp-AR-1ic" secondAttribute="trailing" id="2sh-8T-b4j"/>
                             <constraint firstItem="IRC-fC-PR4" firstAttribute="leading" secondItem="Xqx-MX-tdz" secondAttribute="leading" constant="20" id="7zi-lq-p8v"/>
                             <constraint firstItem="0kk-OH-3c1" firstAttribute="centerY" secondItem="Xqx-MX-tdz" secondAttribute="centerY" id="HPu-yU-ACB"/>
+                            <constraint firstItem="KVp-AR-1ic" firstAttribute="top" secondItem="Xqx-MX-tdz" secondAttribute="top" constant="57" id="Jvt-E5-bbA"/>
                             <constraint firstItem="oGR-43-qwN" firstAttribute="top" secondItem="Xqx-MX-tdz" secondAttribute="top" id="Kdl-Pq-BDP"/>
                             <constraint firstItem="0kk-OH-3c1" firstAttribute="centerX" secondItem="Xqx-MX-tdz" secondAttribute="centerX" id="MX9-Et-QPt"/>
+                            <constraint firstItem="KVp-AR-1ic" firstAttribute="leading" secondItem="Xqx-MX-tdz" secondAttribute="leading" id="PuT-cv-WqJ"/>
                             <constraint firstItem="oGR-43-qwN" firstAttribute="leading" secondItem="Xqx-MX-tdz" secondAttribute="leading" id="X1w-Bd-Eoe"/>
                             <constraint firstAttribute="trailing" secondItem="oGR-43-qwN" secondAttribute="trailing" id="Yzf-yP-X9V"/>
                             <constraint firstItem="0kk-OH-3c1" firstAttribute="centerY" secondItem="IRC-fC-PR4" secondAttribute="centerY" id="dwN-5H-iVc"/>
