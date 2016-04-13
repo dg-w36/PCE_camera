@@ -50,4 +50,5 @@ Carthage/Build
 
 fastlane/report.xml
 fastlane/screenshots
-Codes/PCE相机.xcodeproj/project.xcworkspace/xcuserdata/*
+Codes/PCE相机.xcodeproj/
+Codes/PCE相机.xcodeproj/
