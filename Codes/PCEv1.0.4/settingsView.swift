@@ -10,15 +10,17 @@ import UIKit
 
 class settingsView: UIViewController,UITableViewDataSource,UITableViewDelegate {
 
-    let tag:Int = 1
+//    let tag:Int = 1
     
     var settingDataDictionary:NSDictionary! = nil
+    var hideSettingSwitch:NSDictionary! = nil
     @IBOutlet var settingTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         settingTableView.dataSource = self
         // Do any additional setup after loading the view.
         settingDataDictionary = NSDictionary(contentsOfURL: NSBundle.mainBundle().URLForResource("settingData", withExtension: "plist")!)
+        hideSettingSwitch = NSDictionary(contentsOfURL: NSBundle.mainBundle().URLForResource("hideSettingSwitch", withExtension: "plist")!)
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,7 +28,7 @@ class settingsView: UIViewController,UITableViewDataSource,UITableViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return (settingDataDictionary?.count)!
+        return ((settingDataDictionary?.count)!)
     }
     func tableView(tableView:UITableView, numberOfRowsInSection section:Int) -> Int
     {
@@ -35,18 +37,28 @@ class settingsView: UIViewController,UITableViewDataSource,UITableViewDelegate {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
 //        let cell:UITableViewCell=UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "cell")
-        let cell = tableView.dequeueReusableCellWithIdentifier("settingTableViewCell", forIndexPath: indexPath) as UITableViewCell
-        let label = cell.viewWithTag(tag) as! UILabel
-        label.text = (settingDataDictionary?.allValues[indexPath.section] as! NSArray).objectAtIndex(indexPath.row) as! String
-        print("1\(label.text)")
+        let settingTableCell = tableView.dequeueReusableCellWithIdentifier("settingTableViewCell", forIndexPath: indexPath) as UITableViewCell
+        let settingLabel = settingTableCell.viewWithTag(1) as! UILabel
+        settingLabel.text = (settingDataDictionary?.allValues[indexPath.section] as! NSArray).objectAtIndex(indexPath.row) as! String
+        let settingSwitch = settingTableCell.viewWithTag(2) as! UISwitch
+        settingSwitch.hidden = (hideSettingSwitch.allValues[indexPath.section] as! NSArray).objectAtIndex(indexPath.row) as! Bool
+//        settingSwitch.hidden =
+        //        settingSwitch
+//        print("1\(settingLabel.text)")
 //        cell.textLabel.text="row#\(indexPath.row)"
 //        cell.detailTextLabel.text="subtitle#\(indexPath.row)"
         
-        return cell
+        return settingTableCell
     }
     func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return settingDataDictionary?.allKeys[section] as! String
+//        return settingDataDictionary?.allKeys[section] as! String
+        return "\n"
     }
+    
+    @IBAction func settingSwitchValueChange(sender: AnyObject) {
+//        print(sender.indexPath.row)
+    }
+    
     /*
     // MARK: - Navigation
 

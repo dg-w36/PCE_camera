@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="6Gb-TX-280">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -25,24 +25,24 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tmp1" translatesAutoresizingMaskIntoConstraints="NO" id="XD4-sd-Mzx">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="570"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="495"/>
                                     </imageView>
                                     <stackView opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RoJ-1S-3DU">
-                                        <rect key="frame" x="0.0" y="570" width="600" height="30"/>
+                                        <rect key="frame" x="0.0" y="495" width="600" height="105"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7aG-ML-b0W">
-                                                <rect key="frame" x="0.0" y="0.0" width="200" height="30"/>
-                                                <state key="normal" title="照片墙"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7aG-ML-b0W">
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="105"/>
+                                                <state key="normal" image="picWall"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uf7-fb-VH9">
-                                                <rect key="frame" x="200" y="0.0" width="200" height="30"/>
-                                                <state key="normal" title="拍照"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uf7-fb-VH9">
+                                                <rect key="frame" x="200" y="0.0" width="200" height="105"/>
+                                                <state key="normal" image="takePhoto"/>
                                                 <connections>
                                                     <segue destination="P1T-LC-0xx" kind="presentation" id="Zg5-QE-EVv"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PW0-kx-gYr">
-                                                <rect key="frame" x="400" y="0.0" width="200" height="30"/>
+                                                <rect key="frame" x="400" y="0.0" width="200" height="105"/>
                                                 <state key="normal" title="设置"/>
                                                 <connections>
                                                     <segue destination="6Gb-TX-280" kind="modal" id="EGo-k6-e82"/>
@@ -230,9 +230,15 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="btn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Dd-G7-RzC">
                                                     <rect key="frame" x="8" y="11" width="239" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <switch opaque="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hb9-9p-mvR">
+                                                    <rect key="frame" x="161" y="6" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="settingSwitchValueChange:" destination="6Gb-TX-280" eventType="valueChanged" id="Zru-UL-Gc4"/>
+                                                    </connections>
+                                                </switch>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -253,6 +259,8 @@
     <resources>
         <image name="cc30" width="30" height="30"/>
         <image name="pRB45" width="45" height="45"/>
+        <image name="picWall" width="111" height="105"/>
+        <image name="takePhoto" width="108" height="111"/>
         <image name="tmp1" width="746" height="1238"/>
     </resources>
 </document>
