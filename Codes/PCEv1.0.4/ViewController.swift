@@ -27,8 +27,8 @@ class ViewController: UIViewController,UIScrollViewDelegate{
         super.viewDidLoad()
         initFirstLaunchView()
 //        firstLaunchView.hidden = true
-        firstLaunchView.hidden = false
-        indexStackView.hidden = true
+        firstLaunchView.hidden = true
+        indexStackView.hidden = false
 //        if(NSUserDefaults.standardUserDefaults().boolForKey("isFirstLaunch")as Bool!==false){
 //            NSUserDefaults.standardUserDefaults().setBool(true, forKey: "isFirstLaunch")
 //            initFirstLaunchView()
